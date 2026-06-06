@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiGithub, SiModrinth, SiDiscord, SiKofi } from "react-icons/si";
 import arcticFox from "@/public/arctic_fox.jpg";
 import foxFaceplant from "@/public/fox_faceplant.gif";
+import qokeThumbnail from "@/public/qoke_thumbnail.png";
 import ModrinthProject from "@/components/ModrinthProject";
 import Clock from "@/components/Clock";
 import { FaClock } from "react-icons/fa";
@@ -69,7 +70,23 @@ export default function Home() {
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
             <SiGithub className="mx-auto size-12 text-accent" />
-            <p className="font-medium text-primary text-xl">GitHub</p>
+            <h2 className="font-medium text-primary text-xl">GitHub</h2>
+          </Link>
+          <Link
+            href="https://qoke-website.vercel.app/"
+            target="_blank"
+            className="group relative flex flex-col justify-center gap-4 row-span-2 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] overflow-hidden text-center transition hover:-translate-2"
+          >
+            <Image
+              src={qokeThumbnail}
+              alt=""
+              className="mask-b-from-100% mask-b-from-bg group-hover:mask-b-from-60% transition-all"
+            />
+            <div className="bottom-0 absolute p-6 w-full origin-bottom transition-all translate-y-full group-hover:translate-y-0">
+              <h2 className="font-medium text-primary text-xl">
+                Website design concept I guess
+              </h2>
+            </div>
           </Link>
           <Link
             href="https://modrinth.com/user/foxeddev"
@@ -77,34 +94,35 @@ export default function Home() {
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
             <SiModrinth className="mx-auto size-12 text-accent" />
-            <p className="font-medium text-primary text-xl">Modrinth</p>
+            <h2 className="font-medium text-primary text-xl">Modrinth</h2>
           </Link>
+          <Image
+            src={foxFaceplant}
+            alt="GIF of a fox leaping into snow."
+            unoptimized
+            className="row-span-2 shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] size-full object-cover transition hover:-translate-2"
+          />
           <Link
             href="https://discord.gg/gjKuefgX4T"
             target="_blank"
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
             <SiDiscord className="mx-auto size-12 text-accent" />
-            <p className="font-medium text-primary text-xl">Discord</p>
+            <h2 className="font-medium text-primary text-xl">Discord</h2>
           </Link>
-          <Image
-            src={foxFaceplant}
-            alt="GIF of a fox leaping into snow."
-            className="row-span-2 shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] size-full object-cover transition hover:-translate-2"
-          />
           <Link
             href="https://ko-fi.com/foxeddev"
             target="_blank"
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
             <SiKofi className="mx-auto size-12 text-accent" />
-            <p className="font-medium text-primary text-xl">Ko-fi</p>
+            <h2 className="font-medium text-primary text-xl">Ko-fi</h2>
           </Link>
           <AlternateCaseTranslator />
           <Clock />
           <div className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2">
             <FaClock className="mx-auto size-12 text-accent" />
-            <p className="font-medium text-xl">More stuff coming soon!</p>
+            <h2 className="font-medium text-xl">More stuff coming soon!</h2>
           </div>
         </div>
       </main>

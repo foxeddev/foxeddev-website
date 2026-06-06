@@ -42,7 +42,7 @@ export default async function ModrinthProject() {
         )}
       </div>
       <div className="flex flex-col gap-1">
-        <h3 className="font-medium text-primary text-xl">{project.title}</h3>
+        <h2 className="font-medium text-primary text-xl">{project.title}</h2>
         <p className="font-mono text-text-secondary">{project.description}</p>
       </div>
     </Link>
