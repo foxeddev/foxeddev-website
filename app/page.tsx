@@ -73,7 +73,7 @@ export default function Home() {
             <h2 className="font-medium text-primary text-xl">GitHub</h2>
           </Link>
           <Link
-            href="https://qoke-website.vercel.app/"
+            href="https://qoke.vercel.app/"
             target="_blank"
             className="group relative flex flex-col justify-center gap-4 row-span-2 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] overflow-hidden text-center transition hover:-translate-2"
           >
