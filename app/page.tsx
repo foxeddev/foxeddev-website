@@ -69,7 +69,7 @@ export default function Home() {
             target="_blank"
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
-            <SiGithub className="mx-auto size-12 text-accent" />
+            <SiGithub title="GitHub logo" className="mx-auto size-12 text-accent" />
             <h2 className="font-medium text-primary text-xl">GitHub</h2>
           </Link>
           <Link
@@ -93,7 +93,7 @@ export default function Home() {
             target="_blank"
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
-            <SiModrinth className="mx-auto size-12 text-accent" />
+            <SiModrinth title="Modrinth logo" className="mx-auto size-12 text-accent" />
             <h2 className="font-medium text-primary text-xl">Modrinth</h2>
           </Link>
           <Image
@@ -107,7 +107,7 @@ export default function Home() {
             target="_blank"
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
-            <SiDiscord className="mx-auto size-12 text-accent" />
+            <SiDiscord title="Discord logo" className="mx-auto size-12 text-accent" />
             <h2 className="font-medium text-primary text-xl">Discord</h2>
           </Link>
           <Link
@@ -115,7 +115,7 @@ export default function Home() {
             target="_blank"
             className="flex flex-col justify-center gap-4 bg-bg shadow-[0_0_0_0_var(--color-primary)] hover:shadow-[8px_8px_0_0_var(--color-primary)] p-8 text-center transition hover:-translate-2"
           >
-            <SiKofi className="mx-auto size-12 text-accent" />
+            <SiKofi title="Ko-fi logo" className="mx-auto size-12 text-accent" />
             <h2 className="font-medium text-primary text-xl">Ko-fi</h2>
           </Link>
           <AlternateCaseTranslator />
