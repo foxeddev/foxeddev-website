@@ -41,13 +41,14 @@ export default function AlternateCaseTranslator() {
       <textarea
         ref={input}
         rows={4}
+        placeholder="Enter text"
         className="bg-white p-3 border border-black/20 rounded-2xl outline-none w-full text-black text-2xl resize-none"
       ></textarea>
       <textarea
         ref={output}
         rows={4}
         readOnly
-        placeholder="Alternate Case"
+        placeholder="Alternate case translation"
         className="bg-black/5 p-3 border-none rounded-2xl outline-none w-full text-black text-2xl resize-none"
       ></textarea>
     </div>
